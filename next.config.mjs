@@ -3,7 +3,9 @@ const nextConfig = {
   images: {
     domains: ['res.cloudinary.com'],
   },
-  serverExternalPackages: ['mongoose'],
+  experimental: {
+    serverComponentsExternalPackages: ['mongoose'],
+  },
 };
 
 export default nextConfig;
